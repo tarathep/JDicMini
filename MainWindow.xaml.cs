@@ -43,8 +43,9 @@ namespace JTDic
                     if (p.Id != process.Id)
                         p.Kill();
                 }
+                this.Close();
             }
-
+           
             textbox_1.Focus();
             //LoadData();
             //textbox_1.Text = "";
