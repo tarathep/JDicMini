@@ -86,7 +86,7 @@ namespace JTDic
                     s = "jp";
                     break;
                 case 1:
-                    s = "en";
+                    s = "romanji";
                     break;
                 case 2:
                     s = "kana";
@@ -99,8 +99,10 @@ namespace JTDic
                     break;
 
             }
-            MessageBox.Show(s);
-            string sql = "select jp,th from table_words where "+s+" like '" + condition + "%' order by "+s+" desc";
+
+            //MessageBox.Show(s);
+            string sql = "select jp,th from table_words where "+s+" like '" + condition + "%'";
+            //sql = "select jp,th from table_words where en like 'a%'";
 
             try
             {
