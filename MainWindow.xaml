@@ -17,6 +17,7 @@
             <RowDefinition Height="108*"/>
         </Grid.RowDefinitions>
         <DataGrid Name="dataGrid1" ItemsSource="{Binding Data}" Margin="0,37,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="380" FontSize="20"/>
-        <TextBox x:Name="textbox_1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Grid.ColumnSpan="2" TextChanged="textbox_1_TextChanged" FontSize="24"/>
+        <TextBox x:Name="textbox_1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" Grid.ColumnSpan="2" TextChanged="textbox_1_TextChanged" FontSize="24"/>
+        <Button Content="Search" Grid.Column="1" Margin="0,0,-2.5,119.5" HorizontalAlignment="Right" Width="96" Grid.ColumnSpan="2" Click="Button_Click"/>
     </Grid>
 </Window>

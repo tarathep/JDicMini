@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SQLite;
 using System.Data;
+using System.Diagnostics;
 
 namespace JTDic
 {
@@ -32,9 +33,19 @@ namespace JTDic
         {
             InitializeComponent();
             SetConnection();
-            //MessageBox.Show((int)new Languages("あ").Check()+"");
-            //ก = 3585 ฮ = 3630
 
+            Process process = Process.GetCurrentProcess();
+            var dupl = (Process.GetProcessesByName(process.ProcessName));
+            if (dupl.Length > 1)
+            {
+                foreach (var p in dupl)
+                {
+                    if (p.Id != process.Id)
+                        p.Kill();
+                }
+            }
+
+            textbox_1.Focus();
             //LoadData();
             //textbox_1.Text = "";
         }
@@ -129,6 +140,12 @@ namespace JTDic
         private void textbox_1_TextChanged(object sender, TextChangedEventArgs e)
         {
             search(textbox_1.Text);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            search(textbox_1.Text);
+            
         }
     }
 }
