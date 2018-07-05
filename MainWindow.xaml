@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JTDic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="423.938" Width="403.673">
-    <Grid Margin="0,0,-5.5,1.5">
+        Title="JT Dic Mini" Height="399.271" Width="399.005" ResizeMode="NoResize" ShowInTaskbar="False" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid Margin="0,0,4.5,1.5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="94*"/>
             <ColumnDefinition Width="95*"/>
@@ -16,7 +16,7 @@
             <RowDefinition Height="103*"/>
             <RowDefinition Height="108*"/>
         </Grid.RowDefinitions>
-        <DataGrid Name="dataGrid1" ItemsSource="{Binding Data}" Margin="10,52,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="384" FontSize="16"/>
-        <TextBox x:Name="textbox_1" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="384" Grid.ColumnSpan="2" TextChanged="textbox_1_TextChanged"/>
+        <DataGrid Name="dataGrid1" ItemsSource="{Binding Data}" Margin="0,37,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="380" FontSize="20"/>
+        <TextBox x:Name="textbox_1" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Grid.ColumnSpan="2" TextChanged="textbox_1_TextChanged" FontSize="24"/>
     </Grid>
 </Window>

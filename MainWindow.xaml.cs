@@ -36,7 +36,7 @@ namespace JTDic
             //ก = 3585 ฮ = 3630
 
             //LoadData();
-            textbox_1.Text = "";
+            //textbox_1.Text = "";
         }
         private void SetConnection()
         {
